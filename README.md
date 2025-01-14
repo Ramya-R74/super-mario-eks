@@ -8,7 +8,7 @@ This project demonstrates a fun and interactive deployment of a **Super Mario Ga
 
 Experience the app live: [AstroPlanet Live Demo](https://github.com/Ramya-R74/super-mario-eks.git)
 
-![AstroPlanet Preview](./project_image/Screenshot(105).png)
+![Super-Mario Preview](./project_image/image1.png)
 
 The project is designed to:
 - Deploy the Super Mario game as a Kubernetes application.
@@ -35,7 +35,7 @@ Ensure the following tools are installed on your system:
 - [kubectl](https://kubernetes.io/docs/tasks/tools/)
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 
-![Prerequisites](./project_image/Screenshot2025-01-14150209.png)
+![Prerequisites](./project_image/image2.png)
 
 You also need:
 - An AWS account.
@@ -55,6 +55,7 @@ Navigate to the `terraform` directory and initialize Terraform:
 cd EKS-TF
 terraform init
 ```
+![terraform init](./project_image/image3.png)
 
 ### 3. Configure Variables
 Update the `terraform.tfvars` file with your desired AWS region and other configuration parameters:
@@ -69,6 +70,8 @@ Run Terraform to provision the infrastructure:
 ```bash
 terraform apply --auto-approve
 ```
+![terraform apply](./project_image/image5.png)
+
 Confirm the changes when prompted. This step will create the necessary AWS resources.
 
 ### 5. Update kubeconfig
@@ -83,12 +86,15 @@ Apply the Kubernetes manifest files to deploy the game:
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 ```
+![all resources](./project_image/image6.png)
 
 ### 7. Access the Game
 Retrieve the service's public URL:
 ```bash
 kubectl get svc mario-service
 ```
+![mario-service](./project_image/image7.png)
+
 Open the external IP in your browser to play the Super Mario game!
 
 ## Directory Structure
