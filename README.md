@@ -4,6 +4,12 @@
 
 This project demonstrates a fun and interactive deployment of a **Super Mario Game** on an AWS Elastic Kubernetes Service (EKS) cluster. The entire AWS infrastructure is provisioned and managed using **Terraform**, showcasing Infrastructure as Code (IaC) practices for automating resource creation.
 
+## 🔗 Live Demo
+
+Experience the app live: [AstroPlanet Live Demo](https://github.com/Ramya-R74/super-mario-eks.git)
+
+![AstroPlanet Preview](./project_image/Screenshot(105).png)
+
 The project is designed to:
 - Deploy the Super Mario game as a Kubernetes application.
 - Utilize Terraform for creating a scalable, production-ready AWS environment.
@@ -28,6 +34,8 @@ Ensure the following tools are installed on your system:
 - [Terraform](https://www.terraform.io/downloads)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/)
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+
+![Prerequisites](./project_image/Screenshot2025-01-14150209.png)
 
 You also need:
 - An AWS account.
